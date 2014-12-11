@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/apple_bg">
+	<Button
+		android:id="@+id/startSearchBtn"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="8dip"
+		android:layout_marginRight="8dip"
+		android:layout_marginTop="5dip"
+		android:text="开始搜索"
+	></Button>
+	<TextView
+		android:id="@+id/clientServersText"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="2dip"
+	></TextView>
+	<LinearLayout
+	    android:orientation="horizontal" 
+	    android:layout_width="fill_parent"
+		android:layout_height="46dip"
+		android:gravity="center_horizontal"
+	    >
+	<Button
+		android:id="@+id/study"
+		android:layout_width="160dip"
+		android:layout_height="wrap_content"
+		android:text="学习"
+	></Button>
+	<Button
+	    android:id="@+id/selectDeviceBtn"
+		android:layout_width="160dip"
+		android:layout_height="wrap_content"
+		android:text="学习完毕">	
+		</Button>    
+		</LinearLayout>
+	<!--  <EditText
+		android:id="@+id/clientChatEditText"
+		android:layout_width="fill_parent"
+		android:layout_height="100dip"
+		android:singleLine="false"
+		android:gravity="top"
+		android:editable="false"
+		android:cursorVisible="false"
+		android:background="#aaa"
+	></EditText>-->
+	    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="2dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText android:id="@+id/edit_text_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="bottom"
+        />
+        <Button android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_weight="1.3"
+            android:layout_height="wrap_content"
+            android:text="添加编码名"
+        />
+    </LinearLayout>
+        <TableLayout 
+            android:id="@+id/TableLayout01" 
+            android:layout_width="wrap_content"  
+            android:stretchColumns="0,1,2" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="4dip"
+            >
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<Button android:layout_marginLeft="40dip" android:layout_width="wrap_content" android:layout_height="70dip"  android:id="@+id/cli1" android:layout_weight="1" android:drawableTop="@drawable/name2"/>
+<Button android:layout_marginRight="20dip" android:layout_marginLeft="20dip" android:layout_width="wrap_content" android:layout_height="70dip"  android:id="@+id/cli2" android:layout_weight="1" android:drawableTop="@drawable/name3"/>
+<Button android:layout_marginRight="40dip" android:layout_width="wrap_content" android:layout_height="70dip"  android:id="@+id/cli3" android:layout_weight="1" android:drawableTop="@drawable/name4"/>
+
+</TableRow>
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<Button android:layout_marginLeft="40dip" android:layout_width="wrap_content" android:layout_height="70dip"  android:id="@+id/cli4" android:layout_weight="1" android:drawableTop="@drawable/name5"/>
+<Button android:layout_marginRight="20dip" android:layout_marginLeft="20dip" android:layout_width="wrap_content" android:layout_height="70dip"  android:id="@+id/cli5" android:layout_weight="1" android:drawableTop="@drawable/name6"/>
+<Button android:layout_marginRight="40dip" android:layout_width="wrap_content" android:layout_height="70dip"  android:id="@+id/cli6" android:layout_weight="1" android:drawableTop="@drawable/name7"/>
+
+</TableRow>
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<Button android:layout_marginLeft="40dip" android:layout_width="wrap_content" android:layout_height="70dip"  android:id="@+id/cli7" android:layout_weight="1" android:drawableTop="@drawable/name8"/>
+<Button android:layout_marginRight="20dip" android:layout_marginLeft="20dip" android:layout_width="wrap_content" android:layout_height="70dip"  android:id="@+id/cli8" android:layout_weight="1" android:drawableTop="@drawable/name9"/>
+<Button android:layout_marginRight="40dip" android:layout_width="wrap_content" android:layout_height="70dip"  android:id="@+id/cli9" android:layout_weight="1" android:drawableTop="@drawable/name10"/>
+
+</TableRow>
+<TableRow>
+    <TextView android:layout_height="5dip"></TextView>
+</TableRow>
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vol_up_str" android:id="@+id/apple_volup" android:layout_weight="1" android:drawableTop="@drawable/speaker_plus"/>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mute" android:id="@+id/apple_menu" android:layout_weight="1" android:drawableTop="@drawable/speaker_off"/>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvplus" android:id="@+id/apple_next" android:layout_weight="1" android:drawableTop="@drawable/tv_plus"/>
+
+</TableRow>
+<TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vol_down_str" android:id="@+id/apple_voldn" android:layout_weight="1" android:drawableTop="@drawable/speaker_minus" />
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/power" android:id="@+id/apple_play" android:layout_weight="1" android:drawableTop="@drawable/stop" />
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvminus" android:id="@+id/apple_prev" android:layout_weight="1" android:drawableTop="@drawable/tv_minus" />
+
+</TableRow>
+</TableLayout>
+<LinearLayout 
+	android:orientation="horizontal" android:layout_width="fill_parent" android:gravity="center_horizontal"
+	android:layout_height="fill_parent">
+	<TextView
+		android:id="@+id/protoltext"
+		android:layout_width="120dip"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="2dip"
+		android:textSize="20sp"
+		android:text="选择的编码："
+	></TextView>
+    <Spinner 
+        android:id="@+id/protol"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        ></Spinner>
+    </LinearLayout>
+</LinearLayout>
